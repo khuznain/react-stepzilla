@@ -1,6 +1,6 @@
 {
-  "_from": "react-stepzilla-redux@^0.0.2",
-  "_id": "react-stepzilla-redux@0.0.2",
+  "_from": "react-stepzilla-redux@^0.0.3",
+  "_id": "react-stepzilla-redux@0.0.3",
   "_inBundle": false,
   "_integrity": "sha512-gcdQdhGYohVBAdIaORcmurVg+JiYTu8JqfLkrfuT8UZrpPaepkgulCs1sKzs4fgMgbV4kk+1FBhx+7UpzX5tIw==",
   "_location": "/react-stepzilla-redux",
@@ -8,19 +8,19 @@
   "_requested": {
     "type": "range",
     "registry": true,
-    "raw": "react-stepzilla-redux@^0.0.2",
+    "raw": "react-stepzilla-redux@^0.0.3",
     "name": "react-stepzilla-redux",
     "escapedName": "react-stepzilla-redux",
-    "rawSpec": "^0.0.2",
+    "rawSpec": "^0.0.3",
     "saveSpec": null,
-    "fetchSpec": "^0.0.2"
+    "fetchSpec": "^0.0.3"
   },
   "_requiredBy": [
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/react-stepzilla-redux/-/react-stepzilla-redux-0.0.2.tgz",
+  "_resolved": "https://registry.npmjs.org/react-stepzilla-redux/-/react-stepzilla-redux-0.0.3.tgz",
   "_shasum": "2fabd300c408f88382881e648a0214b4eaeb8c4c",
-  "_spec": "react-stepzilla-redux@^0.0.2",
+  "_spec": "react-stepzilla-redux@^0.0.3",
   "_where": "/home/matheus/Projects/playlisted-web-client",
   "author": {
     "name": "@mpusinhol"
@@ -99,5 +99,5 @@
     "test:coverage": "node ./node_modules/gulp/bin/gulp.js test-coverage",
     "test:watch": "node ./node_modules/gulp/bin/gulp.js test-watch"
   },
-  "version": "0.0.2"
+  "version": "0.0.3"
 }
