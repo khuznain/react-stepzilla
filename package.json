@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "_from": "react-stepzilla-redux",
   "_id": "react-stepzilla-redux@0.0.2",
   "_inBundle": false,
@@ -35,6 +36,39 @@
   },
   "deprecated": false,
   "description": "A react multi-step, wizard component for managing data collection via forms and sub components",
+=======
+  "name": "react-stepzilla",
+  "version": "4.5.0",
+  "description": "A react multi-step, wizard component for managing data collection via forms and sub components",
+  "main": "./dist/main.js",
+  "scripts": {
+    "build": "node ./node_modules/gulp/bin/gulp.js build",
+    "lint": "node ./node_modules/gulp/bin/gulp.js lint",
+    "test": "node ./node_modules/gulp/bin/gulp.js test",
+    "test:watch": "node ./node_modules/gulp/bin/gulp.js test-watch",
+    "test:coverage": "node ./node_modules/gulp/bin/gulp.js test-coverage",
+    "prepublish": "npm run build",
+    "example": "webpack-dev-server",
+    "build-example": "node ./node_modules/gulp/bin/gulp.js build-example"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/newbreedofgeek/react-stepzilla.git"
+  },
+  "keywords": [
+    "react",
+    "multistep",
+    "react",
+    "wizard",
+    "react"
+  ],
+  "author": "@newbreedofgeek",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/newbreedofgeek/react-stepzilla/issues"
+  },
+  "homepage": "https://github.com/newbreedofgeek/react-stepzilla#readme",
+>>>>>>> eb3687e639d8a58a6ddc42eb78a1b46f390080c6
   "devDependencies": {
     "babel-core": "^6.21.0",
     "babel-eslint": "^7.1.1",
@@ -75,6 +109,7 @@
     "webpack-dev-server": "^1.14.1",
     "webpack-stream": "^3.2.0"
   },
+<<<<<<< HEAD
   "homepage": "https://github.com/mpusinhol/react-stepzilla.git#readme",
   "keywords": [
     "react",
@@ -101,4 +136,9 @@
     "test:watch": "node ./node_modules/gulp/bin/gulp.js test-watch"
   },
   "version": "0.0.1"
+=======
+  "dependencies": {
+    "babel-loader": "^6.2.4"
+  }
+>>>>>>> eb3687e639d8a58a6ddc42eb78a1b46f390080c6
 }
