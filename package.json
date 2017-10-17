@@ -100,5 +100,5 @@
     "test:coverage": "node ./node_modules/gulp/bin/gulp.js test-coverage",
     "test:watch": "node ./node_modules/gulp/bin/gulp.js test-watch"
   },
-  "version": "0.0.1"
+  "version": "0.0.2"
 }

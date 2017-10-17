@@ -6,8 +6,6 @@ Object.defineProperty(exports, "__esModule", {
 
 var _StepZilla$propTypes;
 
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -300,22 +298,19 @@ var StepZilla = function (_Component) {
       if (this.props.dontValidate) {
         proceed = true;
       } else {
-        var step = this.refs.activeComponent;
-        step = step.isValidated ? step : step.getWrappedInstance();
-
         if (skipValidationExecution) {
           // we are moving backwards in steps, in this case dont validate as it means the user is not commiting to "save"
           proceed = true;
         } else if (this.isStepAtIndexHOCValidationBased(this.state.compState)) {
           // the user is using a higer order component (HOC) for validation (e.g react-validation-mixin), this wraps the StepZilla steps as a HOC,
           // so use hocValidationAppliedTo to determine if this step needs the aync validation as per react-validation-mixin interface
-          proceed = step.isValidated();
-        } else if (Object.keys(this.refs).length == 0 || typeof step.isValidated == 'undefined') {
+          proceed = this.refs.activeComponent.refs.component.isValidated();
+        } else if (Object.keys(this.refs).length == 0 || typeof this.refs.activeComponent.isValidated == 'undefined') {
           // if its a form component, it should have implemeted a public isValidated class (also pure componenets wont even have refs - i.e. a empty object). If not then continue
           proceed = true;
         } else {
           // user is moving forward in steps, invoke validation as its available
-          proceed = step.isValidated();
+          proceed = this.refs.activeComponent.isValidated();
         }
       }
 
