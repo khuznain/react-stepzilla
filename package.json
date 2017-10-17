@@ -1,0 +1,104 @@
+{
+  "_from": "react-stepzilla-redux",
+  "_id": "react-stepzilla-redux@0.0.2",
+  "_inBundle": false,
+  "_integrity": "sha512-FSN6CESJvOeLnbWhNrrS3l33WMskuk2exjKJuFPvRmtwBl+rImWFLK8TFJPfTFv8XvJ85KidU0+ewOgcQCxo5Q==",
+  "_location": "/react-stepzilla-redux",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "react-stepzilla-redux",
+    "name": "react-stepzilla-redux",
+    "escapedName": "react-stepzilla-redux",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/react-stepzilla-redux/-/react-stepzilla-redux-0.0.1.tgz",
+  "_shasum": "217d5c1f30e86488d3730b22a6349660a21d573f",
+  "_spec": "react-stepzilla-redux",
+  "_where": "/home/matheus/Projects/playlisted-web-client",
+  "author": {
+    "name": "@mpusinhol"
+  },
+  "bugs": {
+    "url": "https://github.com/mpusinhol/react-stepzilla.git/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "babel-loader": "^6.2.4"
+  },
+  "deprecated": false,
+  "description": "A react multi-step, wizard component for managing data collection via forms and sub components",
+  "devDependencies": {
+    "babel-core": "^6.21.0",
+    "babel-eslint": "^7.1.1",
+    "babel-loader": "^6.2.4",
+    "babel-plugin-transform-object-rest-spread": "^6.20.2",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.5.0",
+    "chai": "^3.5.0",
+    "css-loader": "^0.23.1",
+    "del": "^2.2.2",
+    "enzyme": "^2.7.0",
+    "eslint": "^3.17.1",
+    "eslint-config-airbnb": "^13.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.10.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-eslint": "^3.0.1",
+    "gulp-istanbul": "^1.1.1",
+    "gulp-load-plugins": "^1.4.0",
+    "gulp-mocha": "^3.0.1",
+    "gulp-plumber": "^1.1.0",
+    "isparta": "^4.0.0",
+    "joi": "^10.2.2",
+    "joi-validation-strategy": "^0.3.3",
+    "json-loader": "^0.5.4",
+    "promise": "^7.1.1",
+    "prop-types": "^15.5.8",
+    "react": "^15.5.4",
+    "react-addons-test-utils": "^15.5.1",
+    "react-dom": "^15.5.4",
+    "react-validation-mixin": "^5.4.0",
+    "sinon": "^1.17.7",
+    "sinon-chai": "^2.8.0",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1",
+    "webpack-stream": "^3.2.0"
+  },
+  "homepage": "https://github.com/mpusinhol/react-stepzilla.git#readme",
+  "keywords": [
+    "react",
+    "multistep",
+    "react",
+    "wizard",
+    "react"
+  ],
+  "license": "ISC",
+  "main": "./dist/main.js",
+  "name": "react-stepzilla-redux",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mpusinhol/react-stepzilla.git"
+  },
+  "scripts": {
+    "build": "node ./node_modules/gulp/bin/gulp.js build",
+    "build-example": "node ./node_modules/gulp/bin/gulp.js build-example",
+    "example": "webpack-dev-server",
+    "lint": "node ./node_modules/gulp/bin/gulp.js lint",
+    "prepublish": "npm run build",
+    "test": "node ./node_modules/gulp/bin/gulp.js test",
+    "test:coverage": "node ./node_modules/gulp/bin/gulp.js test-coverage",
+    "test:watch": "node ./node_modules/gulp/bin/gulp.js test-watch"
+  },
+  "version": "0.0.1"
+}
